@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tango="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/notify" />
+
+        <com.a256.fortune256.customer.MarqueeTextView
+            android:id="@+id/home_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="亲爱的会员：我公司入款账户兴业银行【白利芳】已经停用 ，切勿向内转账，请需要充值的会员前往“用户中心”获取最新的收款账户，若款项误存至公司已停用的入款账号，256彩票一概不予负责，万请见谅！ 近期收到大部分会员反馈【无法充值】的问题,由于风控严重导致线上支付方式成功率低,目前【银行转账、银联快捷、京东支付、在线支付（网银）】稳定使用,建议广大玩家开通以上充值方式方便充值,感谢您的理解,我们将不遗余力更好的为您服务！ 尊敬的会员：您好，公司入款账号会不定期更换，烦请您在每次充值之前务必先在充值页面查看正在使用的有效银行入款账户；二维扫码充值的会员请先进行订单的提交以获取页面最新的二维码图片，请勿选取之前保存过的二维码进行充值,若入款前未先进行账号确认，款项误入到公司已停用的入款账号，256彩票一概不予负责！万请见谅，感谢配合 【京东支付】首次扫码会出现“京东支付页面并要输入手机号码，短信验证码及绑定银行卡才能进行支付”首次支付成功后之后充值无需再次验证，正常扫码支付即可，请同一部手机设备尽量只使用一个固定的京东账号进行支付噢，如不熟悉操作步骤可联系在线客服进行咨询！ 【银联支付】无需开通网银，填写银行卡卡号、姓名、手机号码信息，银行验证手机号码正确后会发送验证码至您的手机上，输入正确的验证码即可快速完成支付，多多使用噢，如不熟悉操作步骤可联系在线客服进行咨询！ "
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lb_newer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="最新开奖号码"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/home_newer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/logo256" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/lb_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="距下期开奖"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/home_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/logo256" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <TableRow>
+
+            <com.a256.fortune256.customer.TextImageView
+                android:id="@+id/home_cqssc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                tango:imgSrc="@drawable/cqssc"
+                tango:text="重庆时时彩" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <com.a256.fortune256.customer.TextImageView
+                android:id="@+id/home_sfssc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                tango:imgSrc="@drawable/sfssc"
+                tango:text="三分时时彩" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <TableRow>
+
+            <com.a256.fortune256.customer.TextImageView
+                android:id="@+id/home_xy28"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                tango:imgSrc="@drawable/xy28"
+                tango:text="幸运28" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                />
+
+            <com.a256.fortune256.customer.TextImageView
+                android:id="@+id/home_xglhc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                tango:imgSrc="@drawable/xglh"
+                tango:text="香港六合彩" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        >
+        <WebView
+            android:id="@+id/home_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </WebView>
+    </LinearLayout>
+</LinearLayout>

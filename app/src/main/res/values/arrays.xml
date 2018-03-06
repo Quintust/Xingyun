@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>选项一</item>
+        <item>选项二</item>
+        <item>选项三</item>
+        <item>选项四</item>
+        <item>选项五</item>
+
+    </string-array>
+
+    <string-array name="near">
+        <item>选项一</item>
+        <item>选项二</item>
+        <item>选项三</item>
+        <item>选项四</item>
+        <item>选项五</item>
+        <item>选项六</item>
+        <item>选项七</item>
+    </string-array>
+
+</resources>

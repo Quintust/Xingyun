@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="TextImageView">
+        <attr name="imgSrc" format="reference"></attr>
+        <attr name="text" format="string"></attr>
+        <attr name="textSize" format="float"></attr>
+        <attr name="textColor" format="color"></attr>
+    </declare-styleable>
+
+</resources>
