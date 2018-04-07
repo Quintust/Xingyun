@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
+    <!--
     <ListView
         android:entries="@array/near"
         android:id="@+id/find_list"
@@ -11,4 +12,12 @@
         android:layout_height="match_parent"
         >
     </ListView>
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="该页面尚在完善中..."
+        />
 </LinearLayout>

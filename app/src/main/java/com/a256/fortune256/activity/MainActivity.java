@@ -11,6 +11,7 @@ import com.a256.fortune256.viewer.HomePage;
 import com.a256.fortune256.viewer.MinePage;
 import com.a256.fortune256.adapter.MyViewPagerAdapter;
 import com.a256.fortune256.R;
+import com.a256.fortune256.viewer.NearPage;
 import com.a256.fortune256.viewer.TendPage;
 
 import java.util.ArrayList;
@@ -62,11 +63,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
         // ViewPage 初始化
         center = findViewById(R.id.main_viewpage);
 
-        LayoutInflater inflater = LayoutInflater.from(this);
-
         View v1 = new HomePage().init(this);
         View v2 = new TendPage().init(this);
-        View v3 = inflater.inflate(R.layout.near,null);
+        View v3 = new NearPage().init(this);
         View v4 = new MinePage().init(this);
         viewList = new ArrayList<View>();
         viewList.add(v1);
